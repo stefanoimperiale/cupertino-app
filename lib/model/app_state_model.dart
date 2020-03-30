@@ -93,8 +93,8 @@ class AppStateModel extends foundation.ChangeNotifier {
   }
 
   // Loads the list of available products from the repo.
-  void loadProducts() {
-    _availableProducts = ProductsRepository.loadProducts(Category.all);
+  void loadProducts()  async {
+    _availableProducts = await ProductsRepository.loadProducts(Category.all);
     notifyListeners();
   }
 

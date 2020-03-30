@@ -27,6 +27,7 @@ dependencies:
   intl: ^0.15.7           # provides internationalization and localization facilities
   provider: ^3.0.0+1      # provides a simple way to manage state across screens.
   shrine_images: ^1.1.2   # containing products for populating the store.
+  cloud_firestore: 0.13.4+2
 
 dev_dependencies:
   pedantic: ^1.8.0

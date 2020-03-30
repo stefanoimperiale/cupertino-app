@@ -1,5 +1,6 @@
 import 'package:babynames/styles.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class SearchBar extends StatelessWidget {
   const SearchBar({
@@ -30,6 +31,9 @@ class SearchBar extends StatelessWidget {
             ),
             Expanded(
               child: CupertinoTextField(
+                decoration: BoxDecoration(
+                  color: Styles.searchBackground,
+                ),
                 controller: controller,
                 focusNode: focusNode,
                 style: Styles.searchText,
